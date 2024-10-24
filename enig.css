@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    background-color: #0E1113; /* Cor igual ao fundo da página */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 300px;
+    color: rgb(5, 22, 255); /* Para o texto ficar legível */
+}

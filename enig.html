@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medo</title>
+
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.lstUc6cyDQz__dz4KXRmmgHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0E1113; 
+            position: relative; 
+        }
+
+        .container {
+            text-align: center;
+            background-color: #0E1113; 
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 300px;
+            color: white; 
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #0E1113; 
+            color: #fff; 
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .error {
+            color: red;
+        }
+
+        
+        .corner-image {
+            position: absolute;
+            width: 150px; 
+            height: auto;
+        }
+
+        .top-left {
+            top: 9px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<img src="https://preview.redd.it/baseado-no-post-de-u-ocelot-prudent-tentei-fazer-o-s%C3%ADmbolo-v0-4b9910vo4okb1.png?width=640&crop=smart&auto=webp&s=36b943834ff800d558878fcd4490e3b63c1d0832">
+<img src="">
+<img src="">
+<img src="">
+
+<div class="container">
+    <h1>Insira o código</h1>
+    <input type="text" id="codeInput" placeholder="Digite o código">
+    <button onclick="checkCode()">Verificar</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    // Definir o código correto
+    const correctCode = "Estatuas";
+
+    function checkCode() {
+        const userInput = document.getElementById("codeInput").value;
+        const resultElement = document.getElementById("result");
+
+        if (userInput === correctCode) {
+            resultElement.innerHTML = "Você acertou: <strong>Os budas tem um enorme poder.</strong>";
+            resultElement.classList.remove("error");
+        } else {
+            resultElement.innerHTML = "Você errou. Você é um fracasso.";
+            resultElement.classList.add("error");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
